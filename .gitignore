@@ -1,4 +1,3 @@
-
 *.sketch
 *.xd
 *.fig
@@ -9,8 +8,8 @@ node_modules/
 design
 sass
 sass/
-css
-css/
-javascript
-javascript/
+# css
+# css/
+# javascript
+# javascript/
 download.png
