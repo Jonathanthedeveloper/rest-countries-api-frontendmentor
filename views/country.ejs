@@ -1,0 +1,56 @@
+<%- include('partials/header') -%>
+<section class="section__preview">
+  <button class="btn">Back</button>
+  <div class="preview">
+    <div class="preview__image">
+      <img src="<%= country.flags.svg %>" alt="" />
+    </div>
+    <div class="preview__description">
+      <h1><%= country.name.common %></h1>
+      <div class="preview__description--main">
+        <p class="preview__text">
+          <span class="main">native name</span>
+          <span class="sub"><%= country.name %></span>
+        </p>
+        <p class="preview__text">
+          <span class="main">population</span>
+          <span class="sub"><%= country.population %></span>
+        </p>
+        <p class="preview__text">
+          <span class="main">region</span>
+          <span class="sub"><%= country.region %></span>
+        </p>
+
+        <p class="preview__text">
+          <span class="main">sub region</span>
+          <span class="sub"><%= country.subregion %></span>
+        </p>
+
+        <p class="preview__text">
+          <span class="main">capital</span>
+          <span class="sub"><%= country.capital %></span>
+        </p>
+      </div>
+      <div class="preview__description--sub">
+        <p class="preview__text">
+          <span class="main">top level domain</span>
+          <span class="sub"><%= country.tld %></span>
+        </p>
+        <p class="preview__text">
+          <span class="main">currencies</span>
+          <span class="sub"><%= country.currencies %></span>
+        </p>
+        <p class="preview__text">
+          <span class="main">languages</span>
+          <span class="sub"><%= country.languages %></span>
+        </p>
+      </div>
+      <div class="preview__border">
+        <p>border countries :</p>
+        <span class="">France </span>
+        <span>germany </span>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('partials/footer') -%>

@@ -1,0 +1,47 @@
+<%- include('partials/header') -%>
+
+<section class="section__form">
+  <form action="/" class="form" method="post">
+    <input
+      name="country"
+      type="text"
+      class="form__input"
+      placeholder="Search for a country"
+    />
+
+    <!-- <label for="continent">Filter by Region</label> -->
+    <!-- <select name="continent" id="continent" class="form__select">
+            <option class="form__option form__option--default" value="">
+              Filter by Region
+            </option>
+            <option class="form_option" value="africa">africa</option>
+            <option class="form_option" value="america">america</option>
+            <option class="form_option" value="asia">asia</option>
+            <option class="form_option" value="europe">europe</option>
+            <option value="oceania">oceania</option>
+          </select> -->
+    <div class="dropdown">
+      <div class="dropdown__values">
+        <p class="dropdown__value" data-continent="all">Filter by Region</p>
+        <p class="dropdown__value hide" data-continent="africa">africa</p>
+        <p class="dropdown__value hide" data-continent="america">america</p>
+        <p class="dropdown__value hide" data-continent="asia">asia</p>
+        <p class="dropdown__value hide" data-continent="europe">europe</p>
+        <p class="dropdown__value hide" data-continent="oceania">oceania</p>
+      </div>
+      <div class="dropdown__options hide__options">
+        <p class="dropdown__option hide" data-continent="all">Filter by Region</p>
+        <p class="dropdown__option" data-continent="africa">africa</p>
+        <p class="dropdown__option" data-continent="america">america</p>
+        <p class="dropdown__option" data-continent="asia">asia</p>
+        <p class="dropdown__option" data-continent="europe">europe</p>
+        <p class="dropdown__option" data-continent="oceania">oceania</p>
+      </div>
+    </div>
+    <input type="submit" name="continent" value="" />
+  </form>
+</section>
+<section class="section__country">
+</section>
+
+<%- include('partials/footer') -%>

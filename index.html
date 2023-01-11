@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css/main.min.css" />
+    <script defer src="javascript/app.js"></script>
+    <script async src="https://kit.fontawesome.com/a5efd8401d.js" crossorigin="anonymous"></script>
+  </head>
+  <body data-theme="light">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list--item"><h1>Where in the world?</h1></li>
+        <li class="navigation__list--item">
+          <button class="navigation__theme-toggle"><i class="fa-solid fa-moon"></i>Light Mode</button>
+        </li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <section class="section__form">
+        <form action="/" class="form" method="post">
+          <input
+          name="country"
+            type="text"
+            class="form__input"
+            placeholder="Search for a country"
+          />
+
+          <!-- <label for="continent">Filter by Region</label> -->
+          <select name="continent" id="continent" class="form__select">
+            <option class="form__option form__option--default" value="">Filter by Region</option>
+            <option class="form_option" value="africa">africa</option>
+            <option class="form_option" value="america">america</option>
+            <option class="form_option" value="asia">asia</option>
+            <option class="form_option" value="europe">europe</option>
+            <option value="oceania">oceania</option>
+          </select>
+          <input type="submit" value="">
+        </form>
+      </section>
+      <section class="section__country">
+        <!-- <div class="country">
+          <div class="country__flag">
+            <img class="country__flag--img" src="" alt="" />
+          </div>
+          <div class="country__desc">
+            <h2 class="country__desc--name">Germany</h2>
+            <p class="country__desc--detail">
+              <span class="sub">population:</span>
+              <span class="main">54323434</span>
+            </p>
+            <p class="country__desc--detail">
+              <span class="sub">region:</span>
+              <span class="main">america</span>
+            </p>
+            <p class="country__desc--detail">
+              <span class="sub">capital:</span >
+              <span class="main">wagshinton DC</span>
+            </p>
+          </div>
+        </div> -->
+      </section>
+    </main>
+  </body>
+</html>

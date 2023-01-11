@@ -1,0 +1,16 @@
+
+*.sketch
+*.xd
+*.fig
+.DS_Store
+image.png
+node_modules
+node_modules/
+design
+sass
+sass/
+css
+css/
+javascript
+javascript/
+download.png
